@@ -5,6 +5,7 @@ SPLASH_SW = "${@bb.utils.contains('SPLASH_SCREEN_TYPE', 'dietsplash', 'dietsplas
 # hardware independent packages
 IMAGE_INSTALL = " \
     bash \
+    barebox-ppc-bbenv \
     blanking \
     bluez-hcidump \
     bluez5 \
