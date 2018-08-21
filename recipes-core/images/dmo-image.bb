@@ -5,7 +5,6 @@ SPLASH_SW = "${@bb.utils.contains('SPLASH_SCREEN_TYPE', 'dietsplash', 'dietsplas
 # hardware independent packages
 IMAGE_INSTALL = " \
     bash \
-    barebox-ppc-bbenv \
     blanking \
     bluez-hcidump \
     bluez5 \
@@ -108,6 +107,7 @@ IMAGE_INSTALL_append_mx6dl = " \
     firmware-imx-vpu-imx6d \
 "
 IMAGE_INSTALL_append_mx6 = " \
+    barebox-ppc-bbenv \
     imx-gpu-viv \
     imx-gpu-viv-demos \
 "
