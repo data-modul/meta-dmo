@@ -60,7 +60,6 @@ IMAGE_INSTALL = " \
     ${SPLASH_SW} \
 "
 IMAGE_INSTALL_append_dmo-x11 = " \
-    chromium \
     mesa-demos \
     packagegroup-xfce-base \
     unclutter \
@@ -117,7 +116,6 @@ IMAGE_INSTALL_append_mx6 = " \
     imx-gpu-viv-demos \
 "
 IMAGE_INSTALL_append_mx6_dmo-x11 = " \
-    firefox \
     xf86-video-imxfb-vivante \
 "
 IMAGE_INSTALL_append_dmo-edm-comb_dmo-x11 = " \
