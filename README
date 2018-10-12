@@ -9,28 +9,28 @@ Dependencies
 This layer depends on:
 
   URI: git://git.yoctoproject.org/poky
-  layers: meta, meta-selftest, meta-skeleton, meta-yocto, meta-yocto-bsp, bitbake
-  branch: krogoth
+  layers: meta, meta-poky, meta-selftest, meta-skeleton, meta-yocto, meta-yocto-bsp, bitbake
+  branch: morty
 
   URI: git://github.com/OSSystems/meta-browser
   layers: meta-browser
-  branch: krogoth
+  branch: morty
 
   URI: git://github.com/data-modul/meta-fsl-arm
   layers: meta-fsl-arm
-  branch: krogoth
+  branch: morty
 
   URI: git://git.yoctoproject.org/meta-intel
   layers: meta-intel
-  branch: krogoth
+  branch: morty
 
   URI: git://git.openembedded.org/meta-openembedded
   layers: meta-efl, meta-filesystems, meta-gnome, meta-gpe, meta-initramfs, meta-multimedia, meta-networking, meta-oe, meta-perl, meta-ruby, meta-systemd, meta-webserver, meta-xfce
-  branch: krogoth
+  branch: morty
 
   URI: git@github.com:meta-qt5/meta-qt5.git
   layers: meta-qt5
-  branch: krogoth
+  branch: morty
 
 
 Patches
@@ -38,4 +38,5 @@ Patches
 
 Please submit any patches against this BSP to the maintainer(s):
 
-Maintainer: Sebastian Wezel <swezel@data-modul.com>
+Maintainer: Elmar Albert <ealbert@data-modul.com>
+            Reyhaneh Yazdani <RYazdani@data-modul.com>
