@@ -2,14 +2,14 @@ require recipes-kernel/linux/linux-dmo.inc
 
 # Override SRC_URI in a bbappend file to point at a different source
 # tree if you do not want to build from Linus' tree.
-SRC_URI = "git://git@emb.data-modul.com/development/linux;protocol=ssh;branch=swe/vertigo/4.4.57-auo-g804;name=kernel \
+SRC_URI = "git://github.com/data-modul/linux-imx6.git;protocol=https;branch=imx6-ppc/release-4.9.99;name=kernel \
            file://hardware.cfg \
            file://zconfig.cfg \
            file://develop.cfg \
            file://debug.cfg \
 "
 
-LINUX_VERSION ?= "4.4.57"
+LINUX_VERSION ?= "4.9.99"
 LINUX_VERSION_EXTENSION = "+git${@legitimize_package_name('${SRCPV}')}"
 
 # Override SRCREV to point to a different commit in a bbappend file to
