@@ -16,6 +16,7 @@ IMAGE_INSTALL = " \
     e2fsprogs-tune2fs \
     ethtool \
     fb-test \
+    fbida \
     gstreamer1.0 \
     gstreamer1.0-plugins-bad-meta \
     gstreamer1.0-plugins-base-meta \
@@ -60,6 +61,7 @@ IMAGE_INSTALL = " \
     ${SPLASH_SW} \
 "
 IMAGE_INSTALL_append_dmo-x11 = " \
+    alsa-utils \
     mesa-demos \
     packagegroup-xfce-base \
     unclutter \
@@ -69,6 +71,7 @@ IMAGE_INSTALL_append_dmo-x11 = " \
     xhost \
     xinput-calibrator \
     xmodmap \
+    xrandr \
     xrdb \
     xserver-nodm-init \
     xserver-xorg \
@@ -111,7 +114,6 @@ IMAGE_INSTALL_append_mx6dl = " \
     firmware-imx-vpu-imx6d \
 "
 IMAGE_INSTALL_append_mx6 = " \
-    barebox-ppc-bbenv \
     imx-gpu-viv \
     imx-gpu-viv-demos \
 "

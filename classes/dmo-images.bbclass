@@ -38,6 +38,7 @@ OVEL_START = "$(expr ${ROOT_END} + 1)"
 OVEL_END = "$(expr ${OVEL_START} + ${OVEL_SIZE})"
 HOME_START = "$(expr ${OVEL_END} + 1)"
 HOME_END = "$(expr ${HOME_START} + ${HOME_SIZE})"
+DEFAULT_OFTREE ?= "user-oftree"
 
 SDCARD_SIZE = "$(expr ${BOOT_START} + ${BOOT_SIZE} + ${ROOTFS_SIZE} + ${OVEL_SIZE} + ${HOME_SIZE} + 4)"
 
@@ -77,7 +78,7 @@ IMAGE_CMD_dmosdcard () {
     do
         mcopy -i ${WORKDIR}/boot.img -s ${DEPLOY_DIR_IMAGE}/${KERNEL_IMAGETYPE}-${dtb} ::/
     done
-    mcopy -i ${WORKDIR}/boot.img -s ${DEPLOY_DIR_IMAGE}/${KERNEL_IMAGETYPE}-${DEFAULT_KERNEL_DEVICETREE} ::/oftree
+    mcopy -i ${WORKDIR}/boot.img -s ${DEPLOY_DIR_IMAGE}/${KERNEL_IMAGETYPE}-${DEFAULT_KERNEL_DEVICETREE} ::/${DEFAULT_OFTREE}
     if [ ! -z "${INITRAMFS_IMAGE}" ]; then
         mcopy -i ${WORKDIR}/boot.img -s ${DEPLOY_DIR_IMAGE}/${INITRAMFS_IMAGE}-${MACHINE}.cpio.gz ::/initramfs
     fi
